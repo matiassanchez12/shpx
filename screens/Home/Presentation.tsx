@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 
-import { Box, Stack, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Image, Stack, Text, useMediaQuery } from "@chakra-ui/react";
 
 import Section from "../../components/section/Section";
 

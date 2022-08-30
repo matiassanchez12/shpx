@@ -13,8 +13,8 @@ const Presentation = () => {
     <Section paddingY={10} paddingXmd={0}>
       <Stack
         position="absolute"
-        bottom={{ base: 28, md: 20 }}
-        left={{ base: 6, md: 28 }}
+        bottom={{ base: 28, md: 8 }}
+        left={{ base: 16, md: 28 }}
         background="rgba(255, 255, 255, 0.78)"
         backdropFilter="blur(5px)"
         justifyContent="center"
@@ -42,17 +42,14 @@ const Presentation = () => {
           We custom make design to suits your needs.
         </Text>
       </Stack>
-      <Stack position="relative" left={{ base: "200px", md: "initial" }} alignItems="end" zIndex={1}>
+      <Stack position="relative" left={{ base: "150px", md: "initial" }} alignItems="end" zIndex={1}>
         <Box w={{ base: 537, md: 900 }} h={{ base: 365, md: 650 }}>
           <Image
-            src={`${origin}/assets/image.png`}
+            src={`${origin}/assets/${!isMobile ? "presentationres" : "image"}.png`}
             alt="img"
-            width={900}
-            height={600}
-            style={{
-              width: isMobile ? "537" : "900",
-              height: isMobile ? "365" : "600",
-            }}
+            width={"full"}
+            height={"full"}
+            objectFit="contain"
           />
         </Box>
       </Stack>

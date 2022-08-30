@@ -8,7 +8,7 @@ import { Products as ProductsList } from "../../mocks";
 
 const Products = () => {
   return (
-    <Section paddingY={28}>
+    <Section paddingY={20}>
       <Tabs initialItems={ProductsList} titleTabs={["All", "Lamp", "Chair", "Table", "Sofa"]} />
     </Section>
   );

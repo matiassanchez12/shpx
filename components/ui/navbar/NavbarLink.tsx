@@ -13,7 +13,14 @@ const NavbarLink: React.FC<NavbarLinkProps> = (props) => {
 
   return (
     <Link href={href}>
-      <Text as="span" cursor="pointer" color="black" fontSize="24px" fontFamily="roboto" fontWeight={500}>
+      <Text
+        as="span"
+        cursor="pointer"
+        color="black"
+        fontSize={{ base: "16px", md: "24px" }}
+        fontFamily="roboto"
+        fontWeight={500}
+      >
         {label}
       </Text>
     </Link>

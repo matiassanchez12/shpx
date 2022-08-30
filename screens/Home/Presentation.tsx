@@ -14,14 +14,15 @@ const Presentation = () => {
     <Section paddingY={10} paddingXmd={0}>
       <Stack
         position="absolute"
-        bottom={{ base: 28, md: 0 }}
-        left={{ base: 6, md: "initial" }}
+        bottom={{ base: 28, md: 20 }}
+        left={{ base: 6, md: 28 }}
         background="rgba(255, 255, 255, 0.78)"
         backdropFilter="blur(5px)"
         justifyContent="center"
         zIndex={999}
         gap={2}
-        h={{ base: 215, md: "initial" }}
+        p={{ base: 2, md: 6 }}
+        h={{ base: 215, md: 450 }}
       >
         <Text
           fontSize={{ base: 30, md: 64 }}
@@ -42,7 +43,7 @@ const Presentation = () => {
           We custom make design to suits your needs.
         </Text>
       </Stack>
-      <Stack position="relative" left={{ base: "15%", md: "initial" }} alignItems="end" zIndex={1}>
+      <Stack position="relative" left={{ base: "200px", md: "initial" }} alignItems="end" zIndex={1}>
         <Box w={{ base: 537, md: 900 }} h={{ base: 365, md: 650 }}>
           <Image
             src={`${origin}/assets/image.png`}
@@ -56,6 +57,15 @@ const Presentation = () => {
           />
         </Box>
       </Stack>
+      <Box
+        w={400}
+        position="absolute"
+        display={{ base: "none", md: "block" }}
+        right={0}
+        top={36}
+        bg="#FAF4EF"
+        h={207}
+      ></Box>
     </Section>
   );
 };
